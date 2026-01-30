@@ -6,3 +6,6 @@ numpy
 # mlflow
 # dagshub
 dvc
+fastapi
+uvicorn
+

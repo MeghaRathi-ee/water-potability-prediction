@@ -12,3 +12,10 @@ stages:
     - src/data_preprocessing.py
     outs:
     - data/processed
+  train_model:
+    cmd: python src/train.py
+    deps:
+    - data/raw/train.csv
+    - src/train.py
+    outs:
+    - models/model.pkl

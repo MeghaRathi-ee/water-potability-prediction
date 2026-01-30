@@ -1,14 +1,26 @@
-# Data (handled by DVC)
-data/
+# =====================
+# DVC outputs (tracked by DVC, not Git)
+# =====================
+/data/**
+!/data/**/*.dvc
 
+/models/**
+!/models/**/*.dvc
+
+# =====================
 # DVC cache
+# =====================
 .dvc/cache/
 
-# VS Code
-.vscode/
-
+# =====================
 # Python
+# =====================
 __pycache__/
 *.pyc
 .venv/
 .env
+
+# =====================
+# Editors
+# =====================
+.vscode/

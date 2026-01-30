@@ -26,8 +26,8 @@ MODEL_PATH = os.path.join(MODEL_DIR, "model.pkl")
 # -------------------------------------------------
 train_data = pd.read_csv(TRAIN_DATA_PATH)
 
-X_train = train_data.iloc[:, :-1]
-y_train = train_data.iloc[:, -1]
+X_train = train_data.drop(columns=['Potability'], axis=1)
+y_train = train_data['Potability']
 
 # -------------------------------------------------
 # Train model

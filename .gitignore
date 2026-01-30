@@ -1,0 +1,14 @@
+# Data (handled by DVC)
+data/
+
+# DVC cache
+.dvc/cache/
+
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env

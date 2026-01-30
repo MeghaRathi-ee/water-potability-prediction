@@ -25,5 +25,6 @@ stages:
     - data/processed/test_processed.csv
     - models/model.pkl
     - src/evaluate.py
-    outs:
+    metrics:
     - metrics/metrics.json
+
